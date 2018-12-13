@@ -1,0 +1,19 @@
+[package]
+name    = "graphics-uncapped"
+version = "0.0.1"
+authors = ["annie <a@hinaria.com>"]
+edition = "2018"
+
+[dependencies]
+clap               = { version = "2.32.0" }
+env_logger         = { version = "0.6.0" }
+winit              = { version = "0.18.0" }
+# gfx-hal            = { git = "https://github.com/gfx-rs/gfx", rev = "d9813f0847fafed76d01e8218216502c0fe0eb39" }
+# gfx-backend-dx12   = { git = "https://github.com/gfx-rs/gfx", rev = "d9813f0847fafed76d01e8218216502c0fe0eb39" }
+# gfx-backend-dx11   = { git = "https://github.com/gfx-rs/gfx", rev = "d9813f0847fafed76d01e8218216502c0fe0eb39" }
+# gfx-backend-vulkan = { git = "https://github.com/gfx-rs/gfx", rev = "d9813f0847fafed76d01e8218216502c0fe0eb39" }
+
+gfx-hal            = { path = "/discord/gfx/src/hal" }
+gfx-backend-dx12   = { path = "/discord/gfx/src/backend/dx12" }
+gfx-backend-dx11   = { path = "/discord/gfx/src/backend/dx11" }
+gfx-backend-vulkan = { path = "/discord/gfx/src/backend/vulkan" }
